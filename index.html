@@ -5,46 +5,76 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Crystal Game!</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 
 </head>
 
+<header>
+<div class="header-container">
+    <div class="col-md-12">
+        <div class="text-center">
+            <!-- https://coolsymbol.com/cool-fancy-text-generator.html -->
+            <h1>Crystal Collector!</h1>
+        </div>
+    </div>
+</div>
+</header>
+
+
+
+
 <body>
-    <div class="header-container">
-        <div class="col-md-12">
-            <div class="text-center">
-                <!-- https://coolsymbol.com/cool-fancy-text-generator.html -->
-                <h1><strong>Crystal Game</strong></h1>
-            </div>
-            <br>
-            <br>
+    <div>
+        <div class="instructions">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center" class="text 200px">
+                        <h2>Instructions</h2>
+                        <p>You will be given a random number at the start of the game.</p>
+                        <p>There are four crystals below. By clicking on a crystal you will add a specific
+                            amount of
+                            points to your total score.</p>
+                        <p>You win the game by matching your total score to the random number. You lost the game
+                            if
+                            your total score goes above the random number.</p>
+                        <p>The value of each crystal is hidden from you until you click on it.</p>
 
-        </div>
+                        <br>
+                        <br>
 
-        <br>
-        <!-- <div class="container"> -->
-        <div class="row">
-            <div class="col-md-3">
-             <h3>Score To Match</h3><id="ScoreToMatch">
-            </div>
-            <div class="col-md-6">
-            </div>
-            <div class="col-md-3">
-                <strong>
-                    <p>Wins:</p>
-                    </text-left>
-                </strong>
-                <strong>
-                    <p>Losses:</p>
-                    </text-left>
-                </strong>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+    </div>
+    </div>
+
+    <br>
+    <!-- <div class="container"> -->
+    <div class="row">
+        <div class="col-md-3">
+            <h3 id="goal">Score To Match</h3>
+        </div>
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-3">
+            <strong>
+                <p>Wins:<span id="wins">0</span></p>
+                </text-left>
+            </strong>
+            <strong>
+                <p>Losses:<span id="losses">0</span></p>
+                </text-left>
+            </strong>
+        </div>
+    </div>
     </div>
 
     <br>
@@ -54,16 +84,16 @@
 
     <div class="row">
         <div class="col-md-3">
-            <div class="crystal-button" id="blue"><img src="blue.png" width="100px" /></div>
+            <div class="crystal-button" id="blue"><img src="blue.png" width="200px" height="200px" /></div>
         </div>
         <div class="col-md-3">
-            <div class="crystal-button" id="pink"><img src="pink.png" width="100px" /></div>
+            <div class="crystal-button" id="pink"><img src="pink.png" width="200px" height="200px" /></div>
         </div>
         <div class="col-md-3">
-            <div class="crystal-button" id="purple"><img src="purple.png" width="100px" /></div>
+            <div class="crystal-button" id="purple"><img src="purple.png" width="200px" /></div>
         </div>
         <div class="col-md-3">
-            <div class="crystal-button" id="green"><img src="green.png" width="100px" /></div>
+            <div class="crystal-button" id="green"><img src="green.png" width="200px" /></div>
         </div>
     </div>
 
@@ -72,7 +102,7 @@
     <br>
 
     <div class="row">
-        <div class="col-md-4"><strong>Your total score is:</strong></div>
+        <div class="col-md-4"><strong>Your total score is:<span id="score-display">0</span></strong></div>
     </div>
 
 

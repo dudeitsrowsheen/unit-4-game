@@ -5,21 +5,32 @@
 
 }
 
+/* .header-container{
+    background-color: purple;
+    padding: 20px;
+    margin: 20px;
+} */
+
+.instructions{
+
+
+}
+
 
 body{
-    margin: 60px;
-    padding: 60px;
-    background-color: palevioletred !important;
+    background-color: palevioletred;
 
 }
 
 header{
-    background-color: palevioletred;
+    background-color: greenyellow;
     margin:0;
     padding:0;
     text-align:center;
     height:100px;
-    width: 400px;
+    width: 100%;
+    font-family: 'Sofia', cursive;
+    font-weight:normal;
 }
 
 

@@ -1,88 +1,53 @@
-$(document).ready(function(){ //I need jQuery to run!
-var goal, current, blueCrystal, pinkCrystal, purpleCrystal, greenCrystal
-    
-// Reset game
+$(document).ready(function () { //I need jQuery to run!
+    var goal, current, blueCrystal, pinkCrystal, purpleCrystal, greenCrystal, wins, losses;
 
-    var resetGame = function(){
-        goal = Math.floor(Math.random()*101 + 19);
-     blueCrystal = Math.floor(Math.random()*12);
-     pinkCrystal = Math.floor(Math.random()*12);
-     purpleCrystal = Math.floor(Math.random()*12);
-     greenCrystal = Math.floor(Math.random()*12);
-     $('#goal').text("Score to match:" + goal)
+    wins = 0;
+    losses = 0;
+    // Reset game
+
+    var resetGame = function () {
+        current = 0;
+        goal = Math.floor(Math.random() * 101 + 19);
+        blueCrystal = Math.floor(Math.random() * 12);
+        pinkCrystal = Math.floor(Math.random() * 12);
+        purpleCrystal = Math.floor(Math.random() * 12);
+        greenCrystal = Math.floor(Math.random() * 12);
+        $('#goal').text("Score to match:" + goal)
     }
-resetGame();
+    resetGame();
 
 
-// When clicking the function below will repeat with all crystals
+    // When clicking the function below will repeat with all crystals
 
-$("#blue").attr('value', blueCrystal);
+    $("#blue").attr('value', blueCrystal);
     $("#pink").attr('value', pinkCrystal);
     $("#purple").attr('value', purpleCrystal);
     $("#green").attr('value', greenCrystal);
 
 
     $('.crystal-button').click(function () {
-current += parseInt($(this).attr('value'));
+        current += parseInt($(this).attr('value'));
+        $("#score-display").text(current);
         console.log($(this).attr('value'));
-console.log(current)
-});
+        console.log(current);
 
-var Total = 0;
-var Wins = 0;
-var Losses = 0;
+        if (current > goal) {
+            alert("you lose");
+            losses = losses + 1;
+            resetGame();
+        } else if (current === goal) {
+            alert("you win");
+            wins = wins + 1;
+            resetGame();
+        }
 
-$('#Wins').text(Wins);
-$('#Losses').text(Losses);
+        $('#wins').text(wins);
+        $('#losses').text(losses);
+    });
 
-
-var blueCrystal
-var pinkCrystal
-var purpleCrystal
-var greenCrystal
-
-
-
-if (condition) {
-    
-} else {
-    
-}
-
-
-if (condition) {
-    
-} else {
-    
-}
-
-
-if (condition) {
-    
-} else {
-    
-}
-
-
-if (condition) {
-    
-} else {
-    
-}
 
 });
 
-
-
-
-
-
-// $(document).ready(function () {
-
-//     var pink
-//     $('.crystal-button').on("click", function () {
-//         console.log("clicked")
-// $('#').attr("value",random)
 
 
 
