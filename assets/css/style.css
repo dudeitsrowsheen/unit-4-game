@@ -6,13 +6,11 @@
 }
 
 
-
-
-
-
 body{
     margin: 60px;
     padding: 60px;
+    background-color: palevioletred !important;
+
 }
 
 header{
