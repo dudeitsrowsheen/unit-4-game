@@ -1,15 +1,8 @@
-/* .crystal-button{
-    background-color: palevioletred; */
-    
-
-}
-
 .score-display{
  text-align: 15px;
 }
 
-
-padding-left: 200px;
+padding-left: 200px;{
     width: 200px;
 
 }
@@ -18,22 +11,6 @@ padding-left: 200px;
     font-size: 60px;
 }
 
-{
-    margin-left: 200px;
-}
-
-/* .header-container{
-    background-color: purple;
-    padding: 20px;
-    margin: 20px;
-} */
-
-.instructions{
-
-
-}
-
-
 body{
     background-color: paleturquoise;
     text-align: center;
@@ -41,19 +18,18 @@ body{
 }
 
 header{
-    background-color: greenyellow;
-    margin:0;
-    padding:0;
+    background-color: papayawhip;
+    margin:
+    padding:30px;
     text-align:center;
-    height:100px;
+    height:150px;
     width: 100%;
     font-family: 'Sofia', cursive;
     font-weight:normal;
+    padding-top: 25px;
+    font-family: 'Merriweather', serif;
+font-family: 'Pacifico', cursive;
+background-size: cover;
+
+    
 }
-
-
-/* 
-.header { 
-    display: block;
-    background-color: pink;
-  } */
