@@ -1,0 +1,35 @@
+.score-display{
+ text-align: 15px;
+}
+
+padding-left: 200px;{
+    width: 200px;
+
+}
+
+.wins{
+    font-size: 60px;
+}
+
+body{
+    background-color: paleturquoise;
+    text-align: center;
+
+}
+
+header{
+    background-color: papayawhip;
+    margin:
+    padding:30px;
+    text-align:center;
+    height:150px;
+    width: 100%;
+    font-family: 'Sofia', cursive;
+    font-weight:normal;
+    padding-top: 25px;
+    font-family: 'Merriweather', serif;
+font-family: 'Pacifico', cursive;
+background-size: cover;
+
+    
+}
