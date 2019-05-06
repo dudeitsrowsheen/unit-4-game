@@ -1,8 +1,25 @@
-.crystal-button{
-    background-color: palevioletred;
+/* .crystal-button{
+    background-color: palevioletred; */
+    
+
+}
+
+.score-display{
+ text-align: 15px;
+}
 
 
+padding-left: 200px;
+    width: 200px;
 
+}
+
+.wins{
+    font-size: 60px;
+}
+
+{
+    margin-left: 200px;
 }
 
 /* .header-container{
@@ -18,7 +35,8 @@
 
 
 body{
-    background-color: palevioletred;
+    background-color: paleturquoise;
+    text-align: center;
 
 }
 

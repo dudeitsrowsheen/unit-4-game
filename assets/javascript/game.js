@@ -12,7 +12,7 @@ $(document).ready(function () { //I need jQuery to run!
         pinkCrystal = Math.floor(Math.random() * 12);
         purpleCrystal = Math.floor(Math.random() * 12);
         greenCrystal = Math.floor(Math.random() * 12);
-        $('#goal').text("Score to match:" + goal)
+        $('#goal').text(" Score to match : " + goal)
     }
     resetGame();
 
