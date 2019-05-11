@@ -32,13 +32,13 @@ $(document).ready(function () { //I need jQuery to run!
         console.log(current);
 
         if (current > goal) {
-            alert("you lose");
+            alert("ur a loser");
             losses = losses + 1;
             resetGame();
         } else if (current === goal) {
-            alert("you win");
+            alert("good guessing!");
             wins = wins + 1;
-            resetGame();
+            resetGame()
         }
 
         $('#wins').text(wins);

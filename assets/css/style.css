@@ -10,26 +10,34 @@ padding-left: 200px;{
 .wins{
     font-size: 60px;
 }
-
 body{
     background-color: paleturquoise;
     text-align: center;
-
+    margin-bottom: 35px;
+    margin-left: 60px;
+    margin-right: 60px;
+    display: inline-block;
 }
 
 header{
     background-color: papayawhip;
-    margin:
-    padding:30px;
-    text-align:center;
+    text-align: center;
     height:150px;
     width: 100%;
+    display:block (90px;)
+    display: inline-block;
     font-family: 'Sofia', cursive;
-    font-weight:normal;
-    padding-top: 25px;
+    font-weight:normal
+    padding-top: 0px;
     font-family: 'Merriweather', serif;
 font-family: 'Pacifico', cursive;
 background-size: cover;
-
-    
+line-height; 20px;
+vertical-align: text;
+/* scroll-margin-bottom: 60px; */
 }
+
+.scoredisplay{
+font-size: 60px;
+}
+
